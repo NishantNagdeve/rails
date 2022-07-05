@@ -1,6 +1,7 @@
 class StudentsController < ApplicationController
 	before_action :set_student, only: %i[show update destroy]	
 
+	# Show all students
 	def index
 		@students = Student.all
 		render json: @students
