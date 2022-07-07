@@ -13,7 +13,7 @@ module Api
 		render json: @student
 	  end
 
-	  # Creates Student record
+	  # Creates student record
 	  def create
 		@student = Student.new(student_params)
 
