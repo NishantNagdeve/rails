@@ -3,7 +3,6 @@ module Api
 	class StudentsController < ApplicationController
 	  before_action :set_student, only: %i[show update destroy]	
 
-	  # Lists all students
 	  def index
 		@students = Student.all
 		render json: @students
@@ -13,7 +12,6 @@ module Api
 		render json: @student
 	  end
 
-	  # Creates student record
 	  def create
 		@student = Student.new(student_params)
 
